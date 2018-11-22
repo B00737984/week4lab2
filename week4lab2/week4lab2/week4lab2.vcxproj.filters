@@ -18,31 +18,25 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Warrior.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="archer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="wizard.cpp">
+    <ClCompile Include="GameCharacter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="weapon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="warrior.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="archer.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="wizard.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="GameCharacter.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="weapon.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

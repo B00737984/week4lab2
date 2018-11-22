@@ -5,13 +5,25 @@
 #include <iostream>
 #include <string>
 #include "weapon.h"
-#include "warrior.h"
-#include "archer.h"
-#include "wizard.h"
 
 weapon::weapon() {
-	std::cout << "An awesome weapon has once more been crafted by master blacksmith Shane";
+	
 }
+
+
+weapon::weapon(std::string weaponName, int Value, float weight, int damage, int health)
+	: Item({ weaponName, Value, weight }), damage_{ damage }, health_{ health } {
+
+}
+
+void axe() {
+	std::string type = "axe";
+	int Value = 10;
+	float weight = 30.6;
+	int damage = 95;
+	int health = 100;
+}
+
 
 
 
@@ -20,7 +32,7 @@ void weapon::SetType(std::string type) {
 }
 
 std::string weapon::GetType() const {
-	return type;
+	return type_;
 }
 
 void weapon::SetDamage(int damage) {
@@ -28,13 +40,13 @@ void weapon::SetDamage(int damage) {
 }
 
 int weapon::GetDamage() const {
-	return damage;
+	return damage_;
 }
 
-void weapon::SetLevel(int level) {
-	level_ = level;
+void weapon::SetHealth(int health) {
+	health_ = health;
 }
 
-int weapon::GetLevel() const {
-	return level;
+int weapon::GetHealth() const {
+	return health_;
 }

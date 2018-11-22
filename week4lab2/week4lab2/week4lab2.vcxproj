@@ -139,17 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="archer.cpp" />
+    <ClCompile Include="GameCharacter.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Warrior.cpp" />
     <ClCompile Include="weapon.cpp" />
-    <ClCompile Include="wizard.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="archer.h" />
-    <ClInclude Include="warrior.h" />
+    <ClInclude Include="GameCharacter.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="weapon.h" />
-    <ClInclude Include="wizard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

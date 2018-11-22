@@ -6,23 +6,28 @@
 
 #include <iostream>
 #include <string>
+#include "Item.h"
 
 
-class weapon {
+class weapon : public Item {
 private:
 	std::string type_;
 	int damage_;
-	int level_;
+	int health_;
 
 public:
+
+	weapon();
+	weapon(std::string type, int itemvalue, float itemweight, int damage, int health);
+
 	void SetType(std::string type);
 	std::string GetType() const;
 
 	void SetDamage(int damage);
 	int GetDamage() const;
 
-	void SetLevel(int level);
-	int GetLevel() const;
+	void SetHealth(int health);
+	int GetHealth() const;
 
 
-}
+};
